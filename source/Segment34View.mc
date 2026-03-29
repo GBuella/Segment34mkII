@@ -3165,7 +3165,6 @@ class Segment34View extends WatchUi.WatchFace {
                 var compLabel = comp.shortLabel;
                 if (compType == Complications.COMPLICATION_TYPE_INVALID && compLabel != null) {
                     if (compLabel.equals(targetLabel)) {
-                        Complications.subscribeToUpdates(comp.complicationId);
                         return comp.complicationId;
                     }
                 }
